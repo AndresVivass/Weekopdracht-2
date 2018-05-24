@@ -23,6 +23,6 @@ if [[ -f "$1" || -d "$1" ]]; then
 fi
 
 # Verify if successful then delete original picture location
-if [[ "$1"/* == "$2"/* ]]; then
+if [[ "$1" == "$2" ]]; then
   echo "match!"
 fi
