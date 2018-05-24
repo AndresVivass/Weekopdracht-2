@@ -2,12 +2,18 @@
 
 #### Weekopdracht 2 ####
 echo "=================================================="
-# Create: Month & Week folders on ~/Documents
-# ~/Documents/Month
-# ~/Documents/Week
-# The ~/Pictures directory should contain the 10 fotos 
+# 2 parameteres (1- Foto's directory  2- Month/Week indication)
+# copy to a newly created directory (cp command)
+# Use For-loop
+# Verify if successfully copied
+#  - compare MD5sum of both pictures
+# Remove pictures from their original location
 
-countPics=(ls ~/Pictures | wc)	# a counter for the amount of pics in ~/Pictures
+# Initialize variables
+photo_dir=(~/Pictures)		# Parameter 1: Photo directory
+indi_dir="Month"		# Parameter 2: Folder indication
+
+countPics=(ls ~/Pictures | wc)	# Extra: counter for the amount of pictures
 
 
 # Move to Month directory ('cp' is being used)
