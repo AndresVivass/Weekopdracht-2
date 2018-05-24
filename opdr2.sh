@@ -10,21 +10,26 @@
 # Remove pictures from their original location
 #==========================================================================
 
-# Variables
-photo_dir=(~/Pictures/*)	# Parameter 1: Photo directory
-dest_dir=(~/Documents/'Month')	# Parameter 2: Folder indication (Month | Week)
+# Parameter(s)
+#-------------------
+# $1: Photo directory
+# $2: Folder indication (Month | Week)
 
+# Variable(s)
+#-------------------
 #countPics=(ls ~/Pictures | wc)	# Extra: counter for the amount of pictures
 
-if ["$1"];
-then
-  for item in $1;
+
+if [[ -f "$1" || -d "$1" ]]; then
+  for item in $1; do
      #cp $1 $2
-    echo $1[item]
-    item++
+    echo *
+    
+    done
+
 else
   echo "Missing argument"
 
 
 
-fi # ends if-statement
+fi					 # ends if-statement
