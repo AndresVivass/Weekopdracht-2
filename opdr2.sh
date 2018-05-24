@@ -10,48 +10,21 @@
 # Remove pictures from their original location
 #==========================================================================
 
-# Initialize variables
+# Variables
 photo_dir=(~/Pictures/*)	# Parameter 1: Photo directory
 dest_dir=(~/Documents/'Month')	# Parameter 2: Folder indication (Month | Week)
 
-countPics=(ls ~/Pictures | wc)	# Extra: counter for the amount of pictures
+#countPics=(ls ~/Pictures | wc)	# Extra: counter for the amount of pictures
 
-# Move pictures to $indi_dir
-for i in ~/Pictures;
-do
-  cp $photo_dir $dest_dir
-done
-
-if (..............);  # Confirm if files have been copied
+if ["$1"];
 then
-  echo "You have successfully moved '${countPics}' files."
-
+  for item in $1;
+     #cp $1 $2
+    echo $1[item]
+    item++
 else
-  echo "Copying Failed"
+  echo "Missing argument"
 
 
 
-#rm ~/Pictures/*
-
-
-
-
-
-
-echo ""
-
-
-
-
-echo -e "Please specify the folder to copy pictures to (Month|Week): \c"
-read word
-echo "======================================="
-echo "The chosen directory was: $word"
-echo "======================================="
-echo -e "Is this correct?[y/n]: \c"
-read answer
-
-echo "$answer"
-
-
-echo "=================================================="
+fi # ends if-statement
