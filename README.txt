@@ -1,13 +1,8 @@
-# Weekopdracht-2
-Linux - Weekopdracht 2
-
 =======================
  Code:
 =======================
 ./opdr2.sh $1 $2
 
-Parameters:
------------------
 $1 = photo's directory
 $2 = new directory  
 
