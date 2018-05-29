@@ -2,14 +2,6 @@
 #=========================================================================
 #=== Weekopdracht 2 ===
 #=========================================================================
-# 2 parameteres (1- Foto's directory  2- Month/Week indication)			- Done
-# copy to a newly created directory (cp command)				- Done
-# Use For-loop									- Done
-# Verify if successfully copied							- Done
-#  - compare pictures (MD5)
-# Remove pictures from their original location					- Done
-#==========================================================================
-
 cd $1
 dir_1="$1"
 
