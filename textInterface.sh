@@ -19,10 +19,12 @@ echo ""
 echo "Progress:"
 echo "--------------"
 
-if( {$answer} == 'y' ); then
+if [[ $answer = "y" ]]
+then
   echo "process 1................"
   echo "process 2................"
-elif( {$answer} = 'n' ); then
+elif [[ $answer = "n" ]]
+then
   echo "process Terminated.............."
 else
   echo "!Error!: Invalid option, $answer"
