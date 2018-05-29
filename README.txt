@@ -11,3 +11,6 @@ $2 = new directory
 =======================
 ./opdr2.sh ~/Pictures Month         # copies and moves photo's to newly created Month directory
 ./opdr2.sh ~/Pictures Week          # copies and moves photo's to newly created Week directory
+
+
+# textInterface.sh    is extra and not included in the final assignment.
